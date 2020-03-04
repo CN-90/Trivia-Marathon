@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+input {
+  padding: 0.5rem;
+  min-width: 20%;
+}
+
+label {
+  color: white;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+.blue {
+  color: #ff8282;
+}
+.btn-blue {
+  background: rgb(112, 110, 255);
+  padding: 0.7rem;
+  min-width: 20%;
+  margin-top: 1rem;
+  color: whitesmoke;
+}
+.btn-blue:hover {
+  background: rgb(73, 70, 255);
+}
+.header-primary {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+.subtext {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #eee;
+}
+
+#app {
+  width: 55%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* globals end */
+
+#initial-prompt {
+  /* display: none; */
+}
+
+#game-details {
+  background: #232323;
+  padding: 2rem;
+}
+#playerForm {
+  padding-top: 2rem;
+  font-size: 1.3rem;
+}
+#scoreboard {
+  margin-top: 2rem;
+}
+#scoreboard > table {
+  width: 100%;
+}
+table {
+  margin-top: 1rem;
+}
+th {
+  background: #232323;
+  color: white;
+}
+td {
+  background: #eee;
+}
+
+/* Initial prompt end */
+
+#question-container {
+  width: 100%;
+  padding-top: 3rem;
+  display: none;
+}
+
+#player-stats {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.4rem;
+  justify-content: space-between;
+}
+
+#timer {
+  font-size: 2.3rem;
+  margin-top: 1.5rem;
+}
+
+#category {
+  color: rgb(158, 158, 158);
+  margin-top: 1.5rem;
+}
+
+.answer {
+  list-style-type: none;
+  background: #232323;
+  padding: 1rem 2rem;
+  color: white;
+  width: 30%;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.answer:first-child {
+  margin-top: 1.5rem;
+}
+.answer:hover {
+  background: rgb(0, 128, 255);
+}
+
+.nextBtn {
+  background: rgb(73, 70, 255);
+  padding: 1rem;
+  min-width: 20%;
+  margin-top: 1rem;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+.nextBtn:hover {
+  background: rgb(52, 49, 255);
+}
+
+#prompt-next {
+  margin-top: 4rem;
+  display: none;
+}
+#game-over {
+  margin-top: 4rem;
+  display: none;
+}
+
+/* Questions container end */

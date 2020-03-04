@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Marathon</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,400&display=swap"
+      rel="stylesheet"
+    />
+  <link href="main.css" rel="stylesheet"></head>
+  <body>
+    <main id="app">
+      <section id="initial-prompt">
+        <div id="game-details">
+          <h1 class="header-primary blue">Trivia Marathon</h1>
+          <p class="subtext">
+            You have three lives to answer as many questions correctly as you
+            can on a variety of topics. As you advance the questions will
+            increase in difficulty. Enter a display name below so your score can
+            be saved to the score board.
+          </p>
+          <form id="playerForm">
+            <label for="playerName"
+              >Name<br />
+              <input id="nameInput" type="text" placeholder="Name" />
+            </label>
+            <button id="startGame" class="btn-blue">Start</button>
+          </form>
+        </div>
+        <div id="scoreboard">
+          <h1 class="header-primary text-l">High Scores</h1>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+            <tr>
+              <td>Chuck Todd</td>
+              <td>950</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- INITIAL PROMPT END-->
+      <section id="question-container">
+        <div id="player-stats">
+          <p>Score: <span id="score">0</span></p>
+          <p>lives: <span id="lives">3</span></p>
+        </div>
+        <h1 id="time">10</h1>
+        <h2 id="category"></h2>
+        <h1 id="question"></h1>
+        <ul id="answers"></ul>
+        <div id="prompt-next">
+          <h1 id="answer-result">Incorrect!</h1>
+          <button id="next-question" class="nextBtn">Next Question</button>
+        </div>
+        <div id="game-over">
+          <h1>Game Over!</h1>
+          <p>Your score was 1100</p>
+          <button class="nextBtn">Restart</button>
+          <button class="nextBtn">Save Score</button>
+        </div>
+      </section>
+    </main>
+    <script src="./src/index.js"></script>
+  <script type="text/javascript" src="main.js"></script></body>
+</html>
